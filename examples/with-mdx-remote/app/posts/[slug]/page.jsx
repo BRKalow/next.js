@@ -1,5 +1,5 @@
 import { /* MDXRemote ,*/ compileMDX } from 'next-mdx-remote/rsc'
-import nextDynamic from 'next/dynamic'
+import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -16,10 +16,8 @@ const components = {
   a: CustomLink,
   // It also works with dynamically-imported components, which is especially
   // useful for conditionally loading components for certain routes.
-  TestComponent: nextDynamic(() => import('./_components/TestComponent')),
+  TestComponent: dynamic(() => import('./_components/TestComponent')),
 }
-
-export const dynamic = false
 
 export default async function PostPage({ params }) {
   const source = await getPostSource(params.slug)
