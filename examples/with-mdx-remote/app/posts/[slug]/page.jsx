@@ -44,9 +44,7 @@ export default async function PostPage({ params }) {
     <>
       <header>
         <nav>
-          <Link href="/" legacyBehavior>
-            <a>👈 Go back home</a>
-          </Link>
+          <Link href="/">👈 Go back home</Link>
         </nav>
       </header>
       <div className={styles['post-header']}>
