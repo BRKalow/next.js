@@ -1,7 +1,6 @@
 import { /* MDXRemote ,*/ compileMDX } from 'next-mdx-remote/rsc'
 import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
-import Head from 'next/head'
 import Link from 'next/link'
 import CustomLink from './_components/CustomLink'
 import { postFilePaths, getPostSource } from '../../../utils/mdxUtils'
